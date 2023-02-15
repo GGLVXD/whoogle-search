@@ -17,4 +17,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          entryPoint: wrangler publish run
+          entryPoint: wrangler publish ./run
