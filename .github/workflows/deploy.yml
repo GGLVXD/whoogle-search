@@ -17,4 +17,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          entryPoint: docker run --publish 5000:5000 --detach --name whoogle-search whoogle-search:1.0
+          entryPoint: wrangler publish ./run
+
